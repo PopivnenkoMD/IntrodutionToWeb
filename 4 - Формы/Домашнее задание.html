@@ -1,0 +1,76 @@
+<html>
+
+<head>
+   <title>Формы</title>
+   <link href="../4 - Формы/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+   <table>
+      <form name="forma1">
+         <tr>
+            <td></td>
+            <td>Форма регистрации</td>
+         </tr>
+         <tr>
+            <td class="lcolon">Имя</td>
+            <td><input type="text" name="text1" size="20" maxlength="50" value=""></td>
+         </tr>
+         <tr>
+            <td class="lcolon">e-mail</td>
+            <td><input type="mail" name="text1" size="20" maxlength="50" value=""></td>
+         </tr>
+         <tr>
+            <td class="lcolon">password</td>
+            <td><input type="password" name="text1" size="20" maxlength="50" value=""></td>
+         </tr>
+         <tr>
+            <td class="lcolon">repeat the password</td>
+            <td><input type="password" name="text1" size="20" maxlength="50" value=""></td>
+         </tr>
+         <tr>
+            <td class="lcolon">Укажите ваш пол:</td>
+
+            <td><input type="radio" name="sex" value="man" checked>мужской
+               <input type="radio" name="sex" value="woman">
+               женский
+            </td>
+         </tr>
+         <tr>
+            <td class="lcolon">Увлечения</td>
+            <td>
+               <select>
+                  <optgroup label="Компьютеры">
+                     <option value="1">интернет</option>
+                     <option value="2">мобильники</option>
+                     <option value="3">hardware</option>
+                  </optgroup>
+
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td class="lcolon">Ваши пожелания</td>
+            <td><textarea cols="35" rows="5" wrap="virtual"></textarea><br></td>
+         </tr>
+         <tr>
+            <td></td>
+            <td class="lcolon"><input type="submit" name="submit" value="Отправить">
+               <input type="reset" name="reset" value="Очистить">
+            </td>
+         </tr>
+
+      </form>
+   </table>
+
+   <select>
+      <option value="1"></option>
+      <option value="2">Амстердам</option>
+      <option value="3">Лондон</option>
+      <option value="4">Нью-Йорк</option>
+      <option value="5">Париж</option>
+      <option value="6">Токио</option>
+   </select>
+</body>
+
+</html>

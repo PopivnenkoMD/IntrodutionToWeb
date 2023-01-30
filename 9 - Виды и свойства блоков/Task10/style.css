@@ -1,0 +1,9 @@
+#sp{
+    width: 150px;
+}
+#spisok1{
+    list-style-position: inside;
+}
+#spisok{
+    list-style-position: outside;
+}

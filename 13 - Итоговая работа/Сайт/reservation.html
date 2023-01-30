@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Nalayte World Tour</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <meta content="" name="author" />
+    <!-- CSS Files
+    ================================================== -->
+    <link id="bootstrap" href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link id="bootstrap-grid" href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+    <link id="bootstrap-reboot" href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
+    <link id="mdb" href="css/mdb.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.transitions.css" rel="stylesheet" type="text/css" />
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" />
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="dark-scheme">
+    <div id="wrapper">
+        <div id="preloader">
+            <div class="preloader1"></div>
+        </div>
+        <!-- header begin -->
+        <header class="transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <img alt="" src="images/logo.png" />
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                                <div class="de-flex-col">
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <!-- mainmenu -->
+                                <ul id="mainmenu">
+                                    <li><a href="index.html">Главная</a> </li>
+                                    <li><a href="menu.html">Информация о туре</a> </li>
+                                    <li><a href="reservation.html">Билеты</a></li>
+                                    <li><a href="blog.html">Программы</a></li>
+                                    <li><a href="gallery.html">Фанмагазин</a></li>
+                                </ul>
+                                <!-- mainmenu -->
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn-main sm-hide" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Регистрация
+                                    </button>
+
+                                    <!-- Modal -->
+
+
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+
+            <!-- section begin -->
+            <section id="subheader" class="jarallax">
+                <img class="jarallax-img" src="images/background/5.jpg" alt="" />
+                <div class="center-y relative text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h1 style="color: rgb(255, 230, 0);">Продано уже больше половины!</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Один концерт</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Тур</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <form name="contactForm" id='contact_form' method="post">
+                                        <div id="step-1" class="row">
+
+                                            <div class="col-md-4 mb10">
+                                                <h4>Город концерта</h4>
+                                                <select name="Budget" id="budget" value="" class="form-control">
+                                                    <option hidden selected disabled value="1">Выберите город</option>
+                                                    <option value="2">Амстердам</option>
+                                                    <option value="3">Лондон</option>
+                                                    <option value="4">Нью-Йорк</option>
+                                                    <option value="5">Париж</option>
+                                                    <option value="6">Токио</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-4 mb10">
+                                                <h4>Количество билетов</h4>
+                                                <input type='text' name='Name' id='name' class="form-control"
+                                                    placeholder="Количество билетов" maxlength="55" required>
+                                            </div>
+
+                                            <div class="col-md-4 mb10">
+                                                <h4>Способ оплаты</h4>
+                                                <select name="payment" id="payment" value="" class="form-control">
+                                                    <option hidden selected disabled value="1">Выберите способ</option>
+                                                    <option value="2">Картой</option>
+                                                    <option value="3">Переводом</option>
+                                                    <option value="4">Наложенным платежом</option>
+                                                    <option value="5">Наличными курьеру</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div id="step-2" class="row">
+                                            <h4>Введите ваши данные</h4>
+
+                                            <div class="col-md-6">
+                                                <div id='name_error' class='error'>Please enter your name.</div>
+                                                <div>
+                                                    <input type='text' name='Name' id='name' class="form-control"
+                                                        placeholder="Имя" required>
+                                                </div>
+
+                                                <div id='email_error' class='error'>Please enter your valid E-mail ID.
+                                                </div>
+                                                <div>
+                                                    <input type='email' name='Email' id='email' class="form-control"
+                                                        placeholder="Почта" required>
+                                                </div>
+
+                                                <div id='phone_error' class='error'>Please enter your phone number.
+                                                </div>
+                                                <div>
+                                                    <input type='text' name='phone' id='phone' class="form-control"
+                                                        placeholder="Номер телефона" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div id='message_error' class='error'>Please enter your message.</div>
+                                                <div>
+                                                    <textarea name='message' id='message' class="form-control"
+                                                        placeholder="Комментарий"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="g-recaptcha" data-sitekey="copy-your-site-key-here"></div>
+                                                <p id='submit' class="mt20">
+                                                    <input type='submit' id='send_message' value='Подтвердить'
+                                                        class="btn btn-main">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-home" type="button" role="tab"
+                                                aria-controls="pills-home" aria-selected="true">Light</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                aria-controls="pills-profile" aria-selected="false">Medium</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-contact" type="button" role="tab"
+                                                aria-controls="pills-contact" aria-selected="false">Pro</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                            aria-labelledby="pills-home-tab">
+                                            <form name="contactForm" id='contact_form' method="post">
+                                                <div id="step-1" class="row">
+
+                                                    <div class="col-md-4 mb10">
+                                                        <h4>Города тура</h4>
+                                                        <select name="Budget" id="budget" value="" class="form-control">
+                                                            <option hidden selected disabled value="1">Выберите город
+                                                            </option>
+                                                            <option value="2">Амстердам</option>
+                                                            <option value="3">Лондон</option>
+                                                            <option value="4">Нью-Йорк</option>
+                                                            <option value="5">Париж</option>
+                                                            <option value="6">Токио</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-md-4 mb10">
+                                                        <h4>Количество билетов</h4>
+                                                        <input type='text' name='Name' id='name' class="form-control"
+                                                            placeholder="Количество билетов" maxlength="55" required>
+                                                    </div>
+
+                                                    <div class="col-md-4 mb10">
+                                                        <h4>Способ оплаты</h4>
+                                                        <select name="payment" id="payment" value=""
+                                                            class="form-control">
+                                                            <option hidden selected disabled value="1">Выберите способ
+                                                            </option>
+                                                            <option value="2">Картой</option>
+                                                            <option value="3">Переводом</option>
+                                                            <option value="4">Наложенным платежом</option>
+                                                            <option value="5">НАличными курьеру</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+                                                <div id="step-2" class="row">
+                                                    <h4>Введите ваши данные</h4>
+
+                                                    <div class="col-md-6">
+                                                        <div id='name_error' class='error'>Please enter your name.</div>
+                                                        <div>
+                                                            <input type='text' name='Name' id='name'
+                                                                class="form-control" placeholder="Имя" required>
+                                                        </div>
+
+                                                        <div id='email_error' class='error'>Please enter your valid
+                                                            E-mail ID.</div>
+                                                        <div>
+                                                            <input type='email' name='Email' id='email'
+                                                                class="form-control" placeholder="Почта" required>
+                                                        </div>
+
+                                                        <div id='phone_error' class='error'>Please enter your phone
+                                                            number.</div>
+                                                        <div>
+                                                            <input type='text' name='phone' id='phone'
+                                                                class="form-control" placeholder="Номер телефона"
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div id='message_error' class='error'>Please enter your message.
+                                                        </div>
+                                                        <div>
+                                                            <textarea name='message' id='message' class="form-control"
+                                                                placeholder="Комментарий"></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-12">
+                                                        <div class="g-recaptcha" data-sitekey="copy-your-site-key-here">
+                                                        </div>
+                                                        <p id='submit' class="mt20">
+                                                            <input type='submit' id='send_message' value='Подтвердить'
+                                                                class="btn btn-main">
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                            aria-labelledby="pills-profile-tab">
+                                            <form name="contactForm" id='contact_form' method="post">
+                                                <div id="step-1" class="row">
+
+                                                    <div class="col-md-4 mb10">
+                                                        <h4>Города тура</h4>
+                                                        <select name="Budget" id="budget" value="" class="form-control">
+                                                            <option hidden selected disabled value="1">Выберите город
+                                                            </option>
+                                                            <option value="2">Амстердам</option>
+                                                            <option value="3">Лондон</option>
+                                                            <option value="4">Нью-Йорк</option>
+                                                            <option value="5">Париж</option>
+                                                            <option value="6">Токио</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-md-4 mb10">
+                                                        <h4>Количество билетов</h4>
+                                                        <input type='text' name='Name' id='name' class="form-control"
+                                                            placeholder="Количество билетов" maxlength="55" required>
+                                                    </div>
+
+                                                    <div class="col-md-4 mb10">
+                                                        <h4>Способ оплаты</h4>
+                                                        <select name="payment" id="payment" value=""
+                                                            class="form-control">
+                                                            <option hidden selected disabled value="1">Выберите способ
+                                                            </option>
+                                                            <option value="2">Картой</option>
+                                                            <option value="3">Переводом</option>
+                                                            <option value="4">Наложенным платежом</option>
+                                                            <option value="5">НАличными курьеру</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+                                                <div id="step-2" class="row">
+                                                    <h4>Введите ваши данные</h4>
+
+                                                    <div class="col-md-6">
+                                                        <div id='name_error' class='error'>Please enter your name.</div>
+                                                        <div>
+                                                            <input type='text' name='Name' id='name'
+                                                                class="form-control" placeholder="Имя" required>
+                                                        </div>
+
+                                                        <div id='email_error' class='error'>Please enter your valid
+                                                            E-mail ID.</div>
+                                                        <div>
+                                                            <input type='email' name='Email' id='email'
+                                                                class="form-control" placeholder="Почта" required>
+                                                        </div>
+
+                                                        <div id='phone_error' class='error'>Please enter your phone
+                                                            number.</div>
+                                                        <div>
+                                                            <input type='text' name='phone' id='phone'
+                                                                class="form-control" placeholder="Номер телефона"
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div id='message_error' class='error'>Please enter your message.
+                                                        </div>
+                                                        <div>
+                                                            <textarea name='message' id='message' class="form-control"
+                                                                placeholder="Комментарий"></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-12">
+                                                        <div class="g-recaptcha" data-sitekey="copy-your-site-key-here">
+                                                        </div>
+                                                        <p id='submit' class="mt20">
+                                                            <input type='submit' id='send_message' value='Подтвердить'
+                                                                class="btn btn-main">
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                            aria-labelledby="pills-contact-tab">
+                                            <form name="contactForm" id='contact_form' method="post">
+                                                <div id="step-1" class="row">
+
+                                                    <div class="col-md-4 mb10">
+                                                        <h4>Города тура</h4>
+                                                        <select name="Budget" id="budget" value="" class="form-control">
+                                                            <option hidden selected disabled value="1">Выберите город
+                                                            </option>
+                                                            <option value="2">Амстердам</option>
+                                                            <option value="3">Лондон</option>
+                                                            <option value="4">Нью-Йорк</option>
+                                                            <option value="5">Париж</option>
+                                                            <option value="6">Токио</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-md-4 mb10">
+                                                        <h4>Количество билетов</h4>
+                                                        <input type='text' name='Name' id='name' class="form-control"
+                                                            placeholder="Количество билетов" maxlength="55" required>
+                                                    </div>
+
+                                                    <div class="col-md-4 mb10">
+                                                        <h4>Способ оплаты</h4>
+                                                        <select name="payment" id="payment" value=""
+                                                            class="form-control">
+                                                            <option hidden selected disabled value="1">Выберите способ
+                                                            </option>
+                                                            <option value="2">Картой</option>
+                                                            <option value="3">Переводом</option>
+                                                            <option value="4">Наложенным платежом</option>
+                                                            <option value="5">НАличными курьеру</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+
+                                                <div id="step-2" class="row">
+                                                    <h4>Введите ваши данные</h4>
+
+                                                    <div class="col-md-6">
+                                                        <div id='name_error' class='error'>Please enter your name.</div>
+                                                        <div>
+                                                            <input type='text' name='Name' id='name'
+                                                                class="form-control" placeholder="Имя" required>
+                                                        </div>
+
+                                                        <div id='email_error' class='error'>Please enter your valid
+                                                            E-mail ID.</div>
+                                                        <div>
+                                                            <input type='email' name='Email' id='email'
+                                                                class="form-control" placeholder="Почта" required>
+                                                        </div>
+
+                                                        <div id='phone_error' class='error'>Please enter your phone
+                                                            number.</div>
+                                                        <div>
+                                                            <input type='text' name='phone' id='phone'
+                                                                class="form-control" placeholder="Номер телефона"
+                                                                required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div id='message_error' class='error'>Please enter your message.
+                                                        </div>
+                                                        <div>
+                                                            <textarea name='message' id='message' class="form-control"
+                                                                placeholder="Комментарий"></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-12">
+                                                        <div class="g-recaptcha" data-sitekey="copy-your-site-key-here">
+                                                        </div>
+                                                        <p id='submit' class="mt20">
+                                                            <input type='submit' id='send_message' value='Подтвердить'
+                                                                class="btn btn-main">
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div id="success_message" class='success'>
+                                Your message has been sent successfully. Refresh this page if you want to send more
+                                messages.
+                            </div>
+                            <div id="error_message" class='error'>
+                                Sorry there was an error sending your form.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+        </div>
+        <!-- content close -->
+
+        <a href="#" id="back-to-top"></a>
+
+        <!-- footer begin -->
+        <footer>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    <a href="index.html">
+                                        <img alt="" class="f-logo" src="images/logo.png" />
+                                    </a>
+                                </div>
+                                <div class="de-flex-col">
+                                    <div class="social-icons">
+                                        <a href="#"><i class="fa fa-telegram fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-vk fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+
+                <div class="modal-body">
+
+                    <form name="contactForm" id='contact_form' method="post">
+
+                        <div id="step-2" class="row">
+                            <h4>Введите ваши данные</h4>
+
+                            <div class="col-md-6">
+                                <div id='name_error' class='error'>Please enter your name.</div>
+                                <div>
+                                    <input type='text' name='Name' id='name' class="form-control" placeholder="Фомилия"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id='name_error' class='error'>Please enter your name.</div>
+                                <div>
+                                    <input type='text' name='Name' id='name' class="form-control" placeholder="Имя"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id='name_error' class='error'>Please enter your name.</div>
+                                <div>
+                                    <input type='text' name='Name' id='name' class="form-control" placeholder="Отчество"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id='name_error' class='error'>Please enter your name.</div>
+                                <div>
+                                    <input type='text' name='Name' id='name' class="form-control" placeholder="E-mail"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id='name_error' class='error'>Please enter your name.</div>
+                                <div>
+                                    <input type='password' name='Name' id='name' class="form-control" placeholder="Пароль"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id='name_error' class='error'>Please enter your name.</div>
+                                <div>
+                                    <input type='password' name='Name' id='name' class="form-control"
+                                        placeholder="Повторите пароль" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id='name_error' class='error'>Please enter your name.</div>
+                                <div>
+                                    <input type='date' name='Name' id='name' class="form-control"
+                                        placeholder="Дата рождения" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id='name_error' class='error'>Please enter your name.</div>
+                                <div>
+                                    <select name="payment" id="payment" value="" class="form-control">
+                                        <option hidden selected disabled value="1">Пол</option>
+                                        <option value="2">Женский</option>
+                                        <option value="3">Мужской</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-md-12">
+                                <div class="g-recaptcha" data-sitekey="copy-your-site-key-here"></div>
+                                <p id='submit' class="mt20">
+                                    <input type='submit' id='send_message' value='Подтвердить' class="btn btn-main">
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <script src="form.js"></script>
+</body>
+
+</html>

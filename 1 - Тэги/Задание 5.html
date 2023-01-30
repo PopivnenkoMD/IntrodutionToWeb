@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Решение уравнения</title>
+    </head>
+    <body>
+        <pre>program QuadraticEquation;
+            var
+              a, b, c, x1, x2, discriminant : real;
+            begin
+              {ввыод данных}
+              write('a = ');
+              readln(a);
+              write('b = ');
+              readln(b);
+              write('c = ');
+              readln(c);
+              
+              {дискриминант}
+              discriminant := sqr(b) - 4 * a * c;  
+            
+              if discriminant < 0 then
+                writeln('Квадратное уравнение не имеет корней')
+              else
+                begin
+                  if discriminant = 0 then
+                    begin
+                      {квадратное уравнение имеет два одинаковых корня}
+                      x1 := -b / (2 * a);
+                      x2 := x1;
+                    end
+                   else
+                     begin
+                       {уравнение имеет два разных корня}
+                       x1 := (-b + sqrt(discriminant)) / (2 * a);
+                       x2 := (-b - sqrt(discriminant)) / (2 * a);
+                     end;
+                   
+                   {вывод корней уравнения}
+                   writeln('x1 = ', x1:8:3);
+                   writeln('x2 = ', x2:8:3);
+                 end;
+              writeln('Press Enter to Exit...');
+              readln;
+            end.</pre>
+        
+    </body>
+</html>

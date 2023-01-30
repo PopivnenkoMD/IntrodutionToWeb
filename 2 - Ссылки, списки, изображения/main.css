@@ -1,0 +1,24 @@
+.rapercard{
+    display: inline-flex;
+    background-color: #979797;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+body{
+    background-color: yellow;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+}
+a{
+    color: brown;
+    text-decoration: none;
+    font-style: italic;
+}
+a:hover{
+    color: red;
+}
+p::first-letter{
+    color: yellow;
+    font-size: 200%;
+}
